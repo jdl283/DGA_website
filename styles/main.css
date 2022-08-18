@@ -18,7 +18,8 @@ h2, h3, h4 {
 }
 
 #logo {
-  padding: 10%;
+  display: block;
+  padding: 5%;
   width: 50%;
   margin: auto;
 }
@@ -125,8 +126,8 @@ div.borderXwidth a:hover:before, div.borderXwidth a:hover:after {
 
 /* Main Content */
 .devSessions{
-  padding: 5%;
-  padding-bottom: 1%;
+  padding: 10%;
+  padding-bottom: 0px;
   text-decoration: underline;
   text-align: center;
   width: 50%;
@@ -140,6 +141,7 @@ div.borderXwidth a:hover:before, div.borderXwidth a:hover:after {
   border-radius: 10px;
   padding: 0;
   width: 90%;
+  margin-top: 20px;
   border-color: #F25354;
 }
 
@@ -307,7 +309,7 @@ pre {
 	overflow-x: auto;
 }
 
-/* Tablet kinda adjustments */
+/* Tablet adjustments */
 @media screen and (max-width: 910px) {
     #mainContent {
         width: 100%;
