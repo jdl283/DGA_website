@@ -449,4 +449,55 @@ pre {
     margin-bottom: 50px;
     page-break-inside: avoid;
   }
+
+  .sessionCardHeader {
+    border-radius: 10px;
+    padding: 0;
+    height: auto;
+    background-color: #B5B8C2;
+    margin-bottom: 10px;
+    page-break-inside: avoid;
+    display: block;
+  }
+
+  .upNext {
+    border-radius: 10px;
+    float: right;
+    /* margin-right: 10px; */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: auto;
+    height: 80%;
+    background-color: #F25354;
+  }
+
+  .headerDate {
+    border-radius: 10px;
+    float: left;
+    margin-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    width: auto;
+    height: 80%;
+    margin: 10px;
+    background-color: #FFFFFF;
+    page-break-inside: avoid;
+  }
+
+  .headerDetails {
+    margin: 1%;
+    flex-direction: column;
+    display: block;
+  }
+
+  .headerDetailsTitle {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    text-decoration: underline;
+    float: left;
+    font-size: medium;
+  }
 }
