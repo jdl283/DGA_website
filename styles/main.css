@@ -6,15 +6,17 @@
 }
 
 body {
-  overflow-x:hidden;
+  overflow-x: hidden;
   /*background-color: white;*/
   background-color: #2F3137;
-  color: rgba(255,255,255);
+  color: rgba(255, 255, 255);
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
   font-family: 'JetBrains Mono', monospace;
-  color: rgba( 255, 255, 255 );
+  color: rgba(255, 255, 255);
 }
 
 #logo {
@@ -28,7 +30,7 @@ h2, h3, h4 {
   color: #000;
 }
 
-h1{
+h1 {
   font-family: 'JetBrains Mono', monospace;
   color: rgb(255, 0, 0);
   text-align: center;
@@ -36,10 +38,12 @@ h1{
 
 h2 {
   font-family: 'JetBrains Mono', monospace;
-  color: rgba( 255, 255, 255 );
+  color: rgba(255, 255, 255);
 }
 
-p, ul, li {
+p,
+ul,
+li {
   font-family: 'JetBrains Mono', monospace;
   opacity: 0.8;
 }
@@ -49,8 +53,8 @@ p, ul, li {
 }
 
 #tools {
-    font-family: 'Overpass', sans-serif;
-    opacity: 0.8;
+  font-family: 'Overpass', sans-serif;
+  opacity: 0.8;
 }
 
 .container.borderXwidth a div#navText {
@@ -69,63 +73,76 @@ p, ul, li {
 /** CSS transitions from here: https://codepen.io/EvyatarDa/pen/waKXMd */
 
 div.container {
-    top: 0;
-    width: 100%;
-    position: sticky;
-    background-color: #1f2529;
-    /*background-color: white;*/
-    z-index: 500;
-    /* font-family: Raleway; */
-    margin: 0 auto;
-  	padding-top: 2em;
-    padding-bottom: 2em;
-  	text-align: center;
-    border-bottom: 3px solid rgba(0, 0, 0, .7);
+  top: 0;
+  width: 100%;
+  position: sticky;
+  background-color: #1f2529;
+  /*background-color: white;*/
+  z-index: 500;
+  /* font-family: Raleway; */
+  margin: 0 auto;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  text-align: center;
+  border-bottom: 3px solid rgba(0, 0, 0, .7);
 }
 
 div.container a {
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    margin: 0px 10px;
-    padding: 10px 10px;
-    position: relative;
-    z-index: 0;
-    cursor: pointer;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  margin: 0px 10px;
+  padding: 10px 10px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
 }
 
-div.borderXwidth a:before, div.borderXwidth a:after {
-    position: absolute;
-    opacity: 0;
-    width: 0%;
-    height: 2px;
-    content: '';
-    background: #000;
-    transition: all 0.3s;
+div.borderXwidth a:before,
+div.borderXwidth a:after {
+  position: absolute;
+  opacity: 0;
+  width: 0%;
+  height: 2px;
+  content: '';
+  background: #000;
+  transition: all 0.3s;
 }
 
 div.borderXwidth a:before {
-    left: 0px;
-    top: 0px;
+  left: 0px;
+  top: 0px;
 }
 
 div.borderXwidth a:after {
-    right: 0px;
-    bottom: 0px;
+  right: 0px;
+  bottom: 0px;
 }
 
-div.borderXwidth a:hover:before, div.borderXwidth a:hover:after {
-    opacity: 0.7;
-    width: 100%;
-}
-
-.discordWidget {
-  width: 50%;
-  margin: auto;
+div.borderXwidth a:hover:before,
+div.borderXwidth a:hover:after {
+  opacity: 0.7;
+  width: 100%;
 }
 
 /* Main Content */
-.devSessions{
+.upper {
+  width: 100%;
+  height: 500px;
+}
+
+.intro {
+  width: 50%;
+  float: left;
+}
+
+.discordWidget {
+  float: right;
+  width: 40%;
+  margin: auto;
+}
+
+.devSessions {
   padding: 10%;
   padding-bottom: 0px;
   text-decoration: underline;
@@ -134,7 +151,7 @@ div.borderXwidth a:hover:before, div.borderXwidth a:hover:after {
   margin: auto;
 }
 
-#upcomingSessionCard{
+#upcomingSessionCard {
   margin-left: auto;
   margin-right: auto;
   border-style: solid;
@@ -145,7 +162,7 @@ div.borderXwidth a:hover:before, div.borderXwidth a:hover:after {
   border-color: #F25354;
 }
 
-.sessionCard{
+.sessionCard {
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
@@ -158,7 +175,7 @@ div.borderXwidth a:hover:before, div.borderXwidth a:hover:after {
   page-break-inside: avoid;
 }
 
-.sessionCardHeader{
+.sessionCardHeader {
   border-radius: 10px;
   padding: 0;
   height: auto;
@@ -167,10 +184,10 @@ div.borderXwidth a:hover:before, div.borderXwidth a:hover:after {
   page-break-inside: avoid;
 }
 
-.headerDate{
+.headerDate {
   border-radius: 10px;
   float: left;
-  margin-right: 10px; 
+  margin-right: 10px;
   padding-top: 10px;
   padding-bottom: 5px;
   width: 15%;
@@ -180,7 +197,26 @@ div.borderXwidth a:hover:before, div.borderXwidth a:hover:after {
   page-break-inside: avoid;
 }
 
-.headerDateText{
+.upNext {
+  border-radius: 10px;
+  float: right;
+  /* margin-right: 10px; */
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 15%;
+  height: 80%;
+  margin: 6px;
+  background-color: #F25354;
+  page-break-inside: avoid;
+}
+
+.nextUpText {
+  color: #FFFFFF;
+  text-align: center;
+  margin: 0;
+}
+
+.headerDateText {
   text-align: center;
   margin: 0;
 }
@@ -191,25 +227,47 @@ div.borderXwidth a:hover:before, div.borderXwidth a:hover:after {
   display: inline-block;
 }
 
-.headerDetailsTitle{
+.headerDetailsMain {}
+
+.eventTag {
+  border-radius: 10px;
+  float: right;
+  margin-right: 10px;
+  padding: 10px;
+  height: 80%;
+  margin: 10px;
+  background-color: #2F3137;
+  page-break-inside: avoid;
+}
+
+#devSession {
+  background-color: #0d6b00;
+}
+
+#specialEvent {
+  background-color: #650073;
+}
+
+.headerDetailsTitle {
   margin: 0;
   padding: 0;
   text-align: left;
   text-decoration: underline;
+  float: left;
 }
 
-.headerDetail{
+.headerDetail {
   margin: 0;
   padding: 0;
   text-align: left;
 }
 
-.sessionDescription{
+.sessionDescription {
   margin: 1%;
 }
 
 #mainContent {
-  width: 800px;
+  width: 80%;
   padding-left: 50px;
   padding-right: 50px;
   margin-left: auto;
@@ -223,20 +281,21 @@ div.borderXwidth a:hover:before, div.borderXwidth a:hover:after {
   margin-right: auto;
 }
 
-#eventBanner{
-    display: block;
-    float:right;
-    
-    width: 30%;
-    clear: both;
+#eventBanner {
+  display: block;
+  float: right;
+
+  width: 30%;
+  clear: both;
 }
 
 /* Link styles */
 a {
-  color:#26C6DA;
+  color: #26C6DA;
   font-family: 'Open Sans', sans-serif;
   opacity: 0.8;
-  z-index: 10; /*or whatever number that is a positive real number. */
+  z-index: 10;
+  /*or whatever number that is a positive real number. */
   transition: color .3s ease;
   -moz-transition: color .3s ease;
 }
@@ -247,17 +306,17 @@ a:hover {
 
 a:active {
   opacity: .5;
-  color:#26C6DA;
+  color: #26C6DA;
 }
 
-a:link{
+a:link {
   opacity: .7;
-  color:#00ffff;
+  color: #00ffff;
 }
 
-a:visited{
+a:visited {
   opacity: .5;
-  color:#00ffff;
+  color: #00ffff;
 }
 
 /* Footer */
@@ -280,74 +339,114 @@ footer img {
 I grabbed the following code / pre tag stuff from this blog:
 https://perishablepress.com/perfect-pre-tags/
 */
-code, samp, kbd {
-    font-family: "Courier New", Courier, monospace, sans-serif;
-    text-align: left;
-    color: #555;
+code,
+samp,
+kbd {
+  font-family: "Courier New", Courier, monospace, sans-serif;
+  text-align: left;
+  color: #555;
 }
+
 pre code {
-	line-height: 1.6em;
-	font-size: 11px;
+  line-height: 1.6em;
+  font-size: 11px;
 }
+
 pre {
-	padding: 0.1em 0.5em 0.3em 0.7em;
-	border-left: 11px solid #ccc;
-	margin: 1.7em 0 1.7em 0.3em;
-	overflow: auto;
-	width: 93%;
+  padding: 0.1em 0.5em 0.3em 0.7em;
+  border-left: 11px solid #ccc;
+  margin: 1.7em 0 1.7em 0.3em;
+  overflow: auto;
+  width: 93%;
 }
+
 /* target IE7 and IE6 */
 *:first-child+html pre {
-	padding-bottom: 2em;
-	overflow-y: hidden;
-	overflow: visible;
-	overflow-x: auto;
+  padding-bottom: 2em;
+  overflow-y: hidden;
+  overflow: visible;
+  overflow-x: auto;
 }
+
 * html pre {
-	padding-bottom: 2em;
-	overflow: visible;
-	overflow-x: auto;
+  padding-bottom: 2em;
+  overflow: visible;
+  overflow-x: auto;
 }
 
 /* Tablet adjustments */
 @media screen and (max-width: 910px) {
-    #mainContent {
-        width: 100%;
-        padding-left: 5px;
-        padding-right: 5px;
-        margin-left: 0;
-        margin-right: 0;
-    }
+  #mainContent {
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 0;
+    margin-right: 0;
+  }
 
-    #mainContent img {
-        width: 300px;
-    }
-    
-    #eventBanner{
-        float: none;
-        width: 100%
-    }
-    
+  #mainContent img {
+    width: 300px;
+  }
+
+  #eventBanner {
+    float: none;
+    width: 100%
+  }
+
 }
 
 /** Moible adjustments */
-@media screen and (max-width: 400px) {
-    .nav-items {
-        text-align: center;
-    }
+@media screen and (max-width: 500px) {
+  .nav-items {
+    text-align: center;
+  }
 
-    .nav-bucket {
-        padding: 5px;
-        float: none;
-    }
+  .nav-bucket {
+    padding: 5px;
+    float: none;
+  }
 
-    #mainContent {
-        width: 100%;
-        padding-left: 5px;
-        padding-right: 5px;
-    }
+  #mainContent {
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 
-    #mainContent img {
-        width: 270px;
-    }
+  #mainContent img {
+    width: 270px;
+  }
+
+  .intro {
+    width: 100%;
+    float: left;
+  }
+
+  .discordWidget {
+    width: 100%;
+    margin: auto;
+  }
+
+  #upcomingSessionCard {
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 0;
+    width: 100%;
+    margin-top: 20px;
+    border-color: #F25354;
+  }
+
+  .sessionCard {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    background-color: #9EA1AC;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    page-break-inside: avoid;
+  }
 }
