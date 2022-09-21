@@ -19,11 +19,12 @@ h4 {
   color: rgba(255, 255, 255);
 }
 
-#logo {
+.logo {
   display: block;
   padding: 5%;
   width: 50%;
   margin: auto;
+  border-radius: 60px;
 }
 
 .blackText {
