@@ -169,7 +169,7 @@ div.borderXwidth a:hover:after {
   border-radius: 10px;
   padding: 0;
   width: 90%;
-  height: 300px;
+  height: auto;
   background-color: #9EA1AC;
   margin-top: 50px;
   margin-bottom: 50px;
