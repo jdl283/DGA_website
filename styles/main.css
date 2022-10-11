@@ -145,7 +145,7 @@ div.borderXwidth a:hover:after {
 
 .devSessions {
   padding: 10%;
-  padding-bottom: 0px;
+  padding-bottom: 20px;
   text-decoration: underline;
   text-align: center;
   width: 50%;
@@ -153,13 +153,7 @@ div.borderXwidth a:hover:after {
 }
 
 #upcomingSessionCard {
-  margin-left: auto;
-  margin-right: auto;
   border-style: solid;
-  border-radius: 10px;
-  padding: 0;
-  width: 90%;
-  margin-top: 20px;
   border-color: #F25354;
 }
 
@@ -169,9 +163,8 @@ div.borderXwidth a:hover:after {
   border-radius: 10px;
   padding: 0;
   width: 90%;
-  height: auto;
   background-color: #9EA1AC;
-  margin-top: 50px;
+  margin-top: 20px;
   margin-bottom: 50px;
   page-break-inside: avoid;
 }
@@ -264,7 +257,7 @@ div.borderXwidth a:hover:after {
 }
 
 .sessionDescription {
-  margin: 1%;
+  padding: 2%;
 }
 
 #mainContent {
